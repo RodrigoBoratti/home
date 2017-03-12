@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>labsmart</title>
+    <meta charset="utf-8" />
+	<script src="./validacao.js"></script>
+	<link rel="stylesheet" href="formatacao.css">
+
+
+</head>
+<body>
+	<div id="d1"><h1> Está Página fala sobre carros </h1></div>
+	
+	<div id="d2">
+		<ul>
+			<li></ul><a href="./index.html"> Home </a></li>
+			<li><a href="./teste.html"> Testes dos carros </a></li>
+			<li><a href="./maisVendidos.html"> Mais vendidos </a></li>
+			<li><a href="./cadastro.html"> Cadastro </a></li>
+		</ul>	
+	</div>
+
+
+    <form name="form" action="./cadastro-p2.php" method="post" onsubmit="return enviar();">
+		<fieldset>
+			<legend> Cadastro de usuário: </legend>
+			
+			<label class="alinha">Nome:</label>
+			<input type="text" id="nomeid"  name="nome" required><br>
+            
+			<label class="alinha">Email:</label>
+			<input type="text" id="emailid" placeholder="fulano@mail.com" name="email" required><br>
+            
+			<label class="alinha">Telefone:</label>
+			<input type="text" id="foneid" placeholder="(xx)xxx-xx-xx-xx" name="fone" required><br>    
+		
+		
+			<button id="botaoEnviar" type="submit" name="Enviar">Enviar dados </button> 	
+		
+		
+		</fieldset>          
+      
+
+    </form>
+</body>
+</html>
